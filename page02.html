@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="css/local.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+    <script src="semantic/semantic.min.js"></script>
+
+    <div class="ui vertical stripe segment">
+        <div class="ui text container">
+            <h3 class="ui header">Previous Researches Based on Camera</h3>
+            <div class="ui menu" style="background-color:lightgray">
+                <a class="item" href="index.html">
+                    Home
+                </a>
+                <a class="item" href="page01.html">
+                    Old Algorithm
+                </a>
+                <a class="item" href="page02.html">
+                    Camera Based Algorithm
+                </a>
+                <div class="ui pointing dropdown link item">
+                    <span class="text">Algorithms</span>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <a class="item" href="page03.html">Algorithm 1</a>
+                        <div class="divider"></div>
+                        <a class="item" href="page04.html">Algorithm 2</a>
+                        <div class="divider"></div>
+                        <a class="item" href="page05.html">Algorithm 3</a>
+                    </div>
+                </div>
+                <a class="item" href="page06.html">
+                    Quiz
+                </a>
+                <a class="item" href="page07.html">
+                    Bibliography
+                </a>
+            </div>
+            <h4 class="ui header">Why based on camera?</h4>
+            <p>
+                Since the CMOS is getting cheaper and cheaper, cameras, especially cameras on phones become a low cost device which can be accessed by anybody. With the support 
+                of powerful libraries for phones using IOS and Android operating systems, apps on phone are able to provide a cheap and convenient solution for the computer vision
+                based fruit grading.
+            </p>
+            <h4 class="ui header">Techniques used for camera based fruit grading</h4>
+            <p>
+                Generally, the camera and image based method has two steps, the first step is to 
+                segment the image from the background, and the second step is to classify the fruit quality level based on the segmented image.            
+            </p>
+        </div>
+        <audio controls style="visibility:visible">
+            <source src="audios/3.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <div id="button_region">
+        <p></p>
+        <a href="page01.html" class="ui large left floated button">
+            Previous
+        </a>
+        <a href="page03.html" class="ui large right floated primary button">
+            Next
+        </a>
+    </div>
+    <script>
+            $('.ui.dropdown')
+                .dropdown()
+                ;
+    </script>
+
+</body>
+</html>

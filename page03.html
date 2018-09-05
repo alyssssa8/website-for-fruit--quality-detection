@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="css/local.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+    <script src="semantic/semantic.min.js"></script>
+
+    <div class="ui vertical stripe segment">
+        <div class="ui text container">
+            <h3 class="ui header">Previous Researches Based on Camera</h3>
+            <div class="ui menu" style="background-color:lightgray">
+                <a class="item" href="index.html">
+                    Home
+                </a>
+                <a class="item" href="page01.html">
+                    Old Algorithm
+                </a>
+                <a class="item" href="page02.html">
+                    Camera Based Algorithm
+                </a>
+                <div class="ui pointing dropdown link item">
+                    <span class="text">Algorithms</span>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <a class="item" href="page03.html">Algorithm 1</a>
+                        <div class="divider"></div>
+                        <a class="item" href="page04.html">Algorithm 2</a>
+                        <div class="divider"></div>
+                        <a class="item" href="page05.html">Algorithm 3</a>
+                    </div>
+                </div>
+                <a class="item" href="page06.html">
+                    Quiz
+                </a>
+                <a class="item" href="page07.html">
+                    Bibliography
+                </a>
+            </div>
+            <h4 class="ui header">ACM and MFCM based fruit grading</h4>
+            <p>
+                Ghobad Moradi et al proposed an ACM and MFCM absed fruit grading method. They start with the implementation of the automatic fruit shape extraction using the
+                ACM algorithm. The ACM method is a method which will converges the contour towards features like lines and edges. This method is ideal for the foreground is
+                image is distinctive from the background color.
+                <img class="ui medium left floated image transition visible" src="images/acm01.png" data-title="Active Contour Model" data-content="Ghobad Moradi et al, Fruit defect detection from color images using ACM and MFCM algorithms, 2011 International Conference on Electronic Devices, Systems and Applications (ICEDSA), DOI: 10.1109/ICEDSA.2011.5959033">
+            </p>
+            <p>
+                <img class="ui medium right floated image transition visible" src="images/mfcm01.png" data-title="Modified Fuzzy C-Means" data-content="Ghobad Moradi et al, Fruit defect detection from color images using ACM and MFCM algorithms, 2011 International Conference on Electronic Devices, Systems and Applications (ICEDSA), DOI: 10.1109/ICEDSA.2011.5959033">
+                Then the paper used a clustering method named Modified FCM algorithm. This algorithm is based on the FCM (Fuzzy C-Means) method. The feature of FCM method is that a data may
+                belong to more than one clusters, and it has been mainly used on pattern recognition. The paper implemented the defect detection by using Modified FCM algorithm. The feature
+                used for the clustering is the color of the image. From the result we are able to see the defect of the fruit are detected clearly.
+                On the first column of the below image is the original image. The second column is MFCM without ACM. The third column is ACM result. The fourth column is MFCM with ACM. We
+                can see the defects are detected.
+
+            </p>
+            <a href="http://ieeexplore.ieee.org/document/5959033/" class="ui button">Read the paper online</a>
+        </div>
+        <audio controls style="visibility:visible">
+            <source src="audios/4.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <div id="button_region">
+        <p></p>
+        <a href="page02.html" class="ui large left floated button">
+            Previous
+        </a>
+        <a href="page04.html" class="ui large right floated primary button">
+            Next
+        </a>
+    </div>
+    <script>
+        $('.ui.dropdown')
+            .dropdown()
+            ;
+        $('.ui.image')
+            .popup()
+            ;
+
+    </script>
+
+
+</body>
+</html>

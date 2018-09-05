@@ -1,0 +1,45 @@
+.thumb_image {
+    float: left; /* must be floated for same cross browser position of larger image */
+    position: relative;
+    margin: 3px;
+}
+
+.thumb_image span {
+    position:absolute;
+    visibility:hidden;
+}
+
+.thumb_image:hover span {
+    visibility:visible;
+    top:37px; left:37px;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: pink;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+
+
+
+

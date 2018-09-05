@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="css/local.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+    <script src="semantic/semantic.min.js"></script>
+
+    <div class="ui vertical stripe segment">
+        <div class="ui text container">
+            <h3 class="ui header">Previous Researches Based on Camera</h3>
+            <div class="ui menu" style="background-color:lightgray">
+                <a class="item" href="index.html">
+                    Home
+                </a>
+                <a class="item" href="page01.html">
+                    Old Algorithm
+                </a>
+                <a class="item" href="page02.html">
+                    Camera Based Algorithm
+                </a>
+                <div class="ui pointing dropdown link item">
+                    <span class="text">Algorithms</span>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <a class="item" href="page03.html">Algorithm 1</a>
+                        <div class="divider"></div>
+                        <a class="item" href="page04.html">Algorithm 2</a>
+                        <div class="divider"></div>
+                        <a class="item" href="page05.html">Algorithm 3</a>
+                    </div>
+                </div>
+                <a class="item" href="page06.html">
+                    Quiz
+                </a>
+                <a class="item" href="page07.html">
+                    Bibliography
+                </a>
+            </div>
+
+            <h4 class="ui header">Direct color mapping based fruit grading</h4>
+            <p>
+                Dah-Jye Lee et al proposed a method in their paper <q>Rapid Color Grading for Fruit Quality Evaluation Using Direct Color Mapping</q>.
+                This paper &#39s work mainly focused on how to use color to classify the fruits into different grades.  The method, <q>color grading</q> used by the paper will assign each 
+                product a maturity and appearance level based on its color.
+            </p>
+            <p>
+                First, for a given fruit, the paper let an expert to find some ideal fruits representing each maturity level from raw to ripe. Then it will use an equation to convert 
+                the fruits multiple dimension color, for example, RGB, to a 1-D color space. Below is the equation that they used for the conversion.
+                <img class="ui huge left floated image transition visible" src="images/colorindex01.png" data-title="Calculation of the coefficient of Color Index" data-content="Dah-Jye Lee et al, Rapid Color Grading for Fruit Quality Evaluation Using Direct Color Mapping, IEEE Transactions on Automation Science and Engineering (Volume: 8, Issue: 2, April 2011), DOI: 10.1109/TASE.2010.2087325">
+            </p>
+            <p></p>
+            <p>
+                <img class="ui large right floated image transition visible" src="images/tomatoes01.png" data-title="Fruits with Different Grades" data-content="Dah-Jye Lee et al, Rapid Color Grading for Fruit Quality Evaluation Using Direct Color Mapping, IEEE Transactions on Automation Science and Engineering (Volume: 8, Issue: 2, April 2011), DOI: 10.1109/TASE.2010.2087325">
+                <img class="ui large right floated image transition visible" src="images/tomatoes02.png" data-title="Grading Results of Above Fruits" data-content="Dah-Jye Lee et al, Rapid Color Grading for Fruit Quality Evaluation Using Direct Color Mapping, IEEE Transactions on Automation Science and Engineering (Volume: 8, Issue: 2, April 2011), DOI: 10.1109/TASE.2010.2087325">
+                Since each picked fruits RGB is known, and the desired color indices, v1, v2 &#46&#46&#46 vn is assigned. So it is possible to solve the coefficient c1, c2  &#46&#46&#46 cn. When a new 
+                fruit is coming, will compute the fruits color index v and compare with the standard v1, v2  &#46&#46&#46 vn. They also added the standard deviation for color consistency test.
+                The images for tomatoes color index and consistency are shown. The paper use these two attributes to determine the grade.
+            </p>
+            <p>
+                The paper also uses the CannyEdge method to detect the defection of the fruit. If the edge number is high, it means the fruit is very seriously rotten.
+            </p>
+            <a href="http://ieeexplore.ieee.org/document/5959033/" class="ui button">Read the paper online</a>
+        </div>
+        <audio controls style="visibility:visible">
+            <source src="audios/5.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <div id="button_region">
+        <p></p>
+        <a href="page03.html" class="ui large left floated button">
+            Previous
+        </a>
+        <a href="page05.html" class="ui large right floated primary button">
+            Next
+        </a>
+    </div>
+    <script>
+        $('.ui.dropdown')
+            .dropdown()
+            ;
+        $('.ui.image')
+            .popup()
+            ;
+
+    </script>
+
+</body>
+</html>

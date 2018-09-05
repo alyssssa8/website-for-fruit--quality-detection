@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+    <link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="css/local.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+    <script src="semantic/semantic.min.js"></script>
+    <script src="javascript/local.js"></script>
+
+    <div class="ui vertical stripe segment">
+        <div class="ui text container">
+            <h1 >Fruit Quality Detection: A Summary of Previous Work</h1>
+            <div class="ui menu" style="background-color:lightgray">
+                <a class="item" href="index.html">
+                    Home
+                </a>
+                <a class="item" href="page01.html">
+                    Old Algorithm
+                </a>
+                <a class="item" href="page02.html">
+                    Camera Based Algorithm
+                </a>
+                <div class="ui pointing dropdown link item">
+                    <span class="text">Algorithms</span>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <a class="item" href="page03.html">Algorithm 1</a>
+                        <div class="divider"></div>
+                        <a class="item" href="page04.html">Algorithm 2</a>
+                        <div class="divider"></div>
+                        <a class="item" href="page05.html">Algorithm 3</a>
+                    </div>
+                </div>
+                <a class="item" href="page06.html">
+                    Quiz
+                </a>
+                <a class="item" href="page07.html">
+                    Bibliography
+                </a>
+            </div>
+
+            <h3 class="ui header">Introduction</h3>
+            <p>
+                Traditionally when farmers pick out fruits from their field, they have to manually sort out the rotten ones from the good ones by the colors or the surfaces. 
+                This process typically takes a large amount of time and labor. Furthermore, due to the quick grading by farmers, they cannot grade the fruits accurate enough.
+                <img class="ui avatar medium right floated image transition visible" onclick="AddModal(event)" src="images/farmer01.png" data-title="Image from Internet: A Thai Farmer" data-content="https://www.istockphoto.com/photos/thai-farmer?excludenudity=true&sort=mostpopular&mediatype=photography&phrase=thai%20farmer">
+                
+            </p>
+            <p>
+                Fruit grading may consists of several different criteria. Maturity, size, color, blemishes, etc. are all considered when grading is performed.
+                <img class="ui huge right floated image transition visible" onclick="AddModal(event)" src="images/grading_criteria.jpg">
+                Now imagine a technology which automatically does this classification: farmers put all the fruits on the conveyor belt, and a computer will find the rotten ones 
+                using computer vision related techniques to pick up the rotten fruits in a separate basket.  Furthermore, the good quality of fruits is graded to different sales 
+                channels. 
+            </p>
+        </div>
+        <audio controls style="visibility:visible">
+            <source src="audios/1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <div id="button_region">
+        <p></p>
+        <button class="ui large left floated button">
+            Previous
+        </button>
+        <a href="page01.html" class="ui large right floated primary button" >
+            Next
+        </a>
+    </div>
+    <img class="ui large modal" name="modalimage" src="images/farmer01.png" visibility="hidden">
+    <img class="ui large modal" name="modalimage" src="images/grading_criteria.jpg" visibility="hidden">
+    <script>
+        $('.ui.dropdown')
+            .dropdown()
+        ;
+
+        $('.ui.image')
+            .popup()
+            ;
+
+
+
+    </script>
+</body>
+</html>

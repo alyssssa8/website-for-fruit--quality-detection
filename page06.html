@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="css/local.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+    <script src="semantic/semantic.min.js"></script>
+    <script src="javascript/local.js"></script>
+
+    <div class="ui vertical stripe segment">
+        <div class="ui text container">
+            <h3 class="ui header">Quiz</h3>
+            <div class="ui menu" style="background-color:lightgray">
+                <a class="item" href="index.html">
+                    Home
+                </a>
+                <a class="item" href="page01.html">
+                    Old Algorithm
+                </a>
+                <a class="item" href="page02.html">
+                    Camera Based Algorithm
+                </a>
+                <div class="ui pointing dropdown link item">
+                    <span class="text">Algorithms</span>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <a class="item" href="page03.html">Algorithm 1</a>
+                        <div class="divider"></div>
+                        <a class="item" href="page04.html">Algorithm 2</a>
+                        <div class="divider"></div>
+                        <a class="item" href="page05.html">Algorithm 3</a>
+                    </div>
+                </div>
+                <a class="item" href="page06.html">
+                    Quiz
+                </a>
+                <a class="item" href="page07.html">
+                    Bibliography
+                </a>
+            </div>
+            <div name="quiz_div">
+                <h4 class="ui header">Do you understand more about fruit grading?</h4>
+
+                <div class="ui form">
+                    <div class="grouped fields">
+                        <label>1. What is the criteria used for determining the grade of a fruit?</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input name="quiz_1_1" type="radio">
+                                <label>Color</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input name="quiz_1_2" type="radio">
+                                <label>Size</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input name="quiz_1_3" type="radio">
+                                <label>Blemishes</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input name="quiz_1_4" type="radio">
+                                <label>All of the above</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grouped fields">
+                        <label>2. What is a segmentation method?</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input name="quiz_2_1" type="radio">
+                                <label>It tells the grade of a fruit</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input name="quiz_2_2" type="radio">
+                                <label>It tells the kind of the fruit</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input name="quiz_2_3" type="radio">
+                                <label>It tells the position of a fruit from the background image</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input name="quiz_2_4" type="radio">
+                                <label>It tells the size of a fruit</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grouped fields">
+                        <label>3. Among all the methods for fruit grading, why do we choose camera based method?</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input name="quiz_3_1" type="radio">
+                                <label>It is more accurate than any other methods</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input name="quiz_3_2" type="radio">
+                                <label>It is more inexpensive and more convenient</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input name="quiz_3_3" type="radio">
+                                <label>It has better performance</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input name="quiz_3_4" type="radio">
+                                <label>Only it can be used for fruit grading</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grouped fields">
+                        <label>4. Which method was not mentinoed in the tutorial?</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input name="quiz_4_1" type="radio">
+                                <label>K-mean method</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input name="quiz_4_2" type="radio">
+                                <label>Color index method</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input name="quiz_4_3" type="radio">
+                                <label>ACM method</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input name="quiz_4_4" type="radio">
+                                <label>Histogram method</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grouped fields">
+                        <label>5. Why the histogram can help to do the segmentation?</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input name="quiz_5_1" type="radio">
+                                <label>Because it will contract the borader to the edges</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input name="quiz_5_2" type="radio">
+                                <label>Because it can get result from trained neuronetwork </label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input name="quiz_5_3" type="radio">
+                                <label>Because the fruit has different color from the background</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input name="quiz_5_4" type="radio">
+                                <label>Because it uses gaussian blur to do combination</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div name="result_div" style="visibility:hidden">
+                Congratulations!!
+            </div>
+        </div>
+    </div>
+    <div id="button_region">
+        <p></p>
+        <a name="button_submit" href="page05.html" class="ui large left floated button">
+            Previous
+        </a>
+        <button name="button_submit" onclick="CheckResult()" class="ui large right floated primary button">
+            Submit Quiz
+        </button>
+
+        <a name="button_ref" href="page07.html" class="ui large primary floated button" style="visibility:hidden">
+            Go to the reference
+        </a>
+    </div>
+    <script>
+            $('.ui.dropdown')
+                .dropdown()
+                ;
+    </script>
+
+</body>
+</html>

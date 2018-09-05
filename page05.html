@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="css/local.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+    <script src="semantic/semantic.min.js"></script>
+
+    <div class="ui vertical stripe segment">
+        <div class="ui text container">
+            <h3 class="ui header">Previous Researches Based on Camera</h3>
+            <div class="ui menu" style="background-color:lightgray">
+                <a class="item" href="index.html">
+                    Home
+                </a>
+                <a class="item" href="page01.html">
+                    Old Algorithm
+                </a>
+                <a class="item" href="page02.html">
+                    Camera Based Algorithm
+                </a>
+                <div class="ui pointing dropdown link item">
+                    <span class="text">Algorithms</span>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <a class="item" href="page03.html">Algorithm 1</a>
+                        <div class="divider"></div>
+                        <a class="item" href="page04.html">Algorithm 2</a>
+                        <div class="divider"></div>
+                        <a class="item" href="page05.html">Algorithm 3</a>
+                    </div>
+                </div>
+                <a class="item" href="page06.html">
+                    Quiz
+                </a>
+                <a class="item" href="page07.html">
+                    Bibliography
+                </a>
+            </div>
+
+            <h4 class="ui header">Histogram based fruit grading</h4>
+            <p>
+                In the paper <q>Study on Fruit Quality Inspection Based on Its Surface Color in Produce Logistics</q>, Yizhong Wang et al&#39s fruit segmentation and grading are all based on the histogram of the image. 
+                The paper first uses a segmentation on the banana based on the H component histogram. By carefully selecting H = 0.41 as a threshold, the paper can easily do a segmentation. 
+
+            </p>
+            <p>
+                <img class="ui medium left floated image transition visible" src="images/histogram03.png" data-title="H and S Histrogram for the Banana" data-content="Yizhong Wang et al, Study on Fruit Quality Inspection Based on Its Surface Color in Produce Logistics, 2010 International Conference on Manufacturing Automation, DOI: 10.1109/ICMA.2010.47">
+                <img class="ui medium right floated image transition visible" src="images/histogram02.png" data-title="Banana After Segmentation" data-content="Yizhong Wang et al, Study on Fruit Quality Inspection Based on Its Surface Color in Produce Logistics, 2010 International Conference on Manufacturing Automation, DOI: 10.1109/ICMA.2010.47">
+                <img class="ui medium right floated image transition visible" src="images/histogram04.png" data-title="Machine Learning Results of Banana" data-content="Yizhong Wang et al, Study on Fruit Quality Inspection Based on Its Surface Color in Produce Logistics, 2010 International Conference on Manufacturing Automation, DOI: 10.1109/ICMA.2010.47">
+                <img class="ui medium right floated image transition visible" src="images/histogram05.png" data-title="Neuronetwork for the Machine Learning" data-content="Yizhong Wang et al, Study on Fruit Quality Inspection Based on Its Surface Color in Produce Logistics, 2010 International Conference on Manufacturing Automation, DOI: 10.1109/ICMA.2010.47">
+                First, for a given fruit, the paper let an expert to find some ideal fruits representing each maturity level from raw to ripe. Then it will use an equation to convert
+                the fruits multiple dimension color, for example, RGB, to a 1-D color space. Below is the equation that they used for the conversion.
+            </p>
+            <p></p>
+            <p>
+                Then a neuro network machine learning is used for the grading of fruit quality. The feature selected by the paper are still the histogram for the image. It first 
+                combines the features in the fewer levels. Then it implements a 3 layer neuro network to decide the banana&#39s quality. After training and testing, the classification 
+                result is listed on the end of the paper.
+            </p>
+
+            <a href="http://ieeexplore.ieee.org/document/5695164/" class="ui button">Read the paper online</a>
+        </div>
+        <audio controls style="visibility:visible">
+            <source src="audios/6.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <div id="button_region">
+        <p></p>
+        <a href="page04.html" class="ui large left floated button">
+            Previous
+        </a>
+        <a href="page06.html" class="ui large right floated primary button">
+            Next
+        </a>
+    </div>
+    <script>
+        $('.ui.dropdown')
+            .dropdown()
+            ;
+        $('.ui.image')
+            .popup()
+            ;
+
+
+    </script>
+
+</body>
+</html>
